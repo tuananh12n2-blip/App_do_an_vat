@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9FAFB">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/centerGuide"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5"/>
+
+
+    <ImageView
+        android:id="@+id/imgApp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/fpt"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@id/centerGuide"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="16dp"/>
+
+
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chào mừng đến với"
+        android:textSize="16sp"
+        android:textColor="#6B7280"
+        app:layout_constraintTop_toBottomOf="@id/imgApp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SACKMINI"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#111827"
+        app:layout_constraintTop_toBottomOf="@id/tvWelcome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trải nghiệm mua sắm tối giản thông minh"
+        android:textSize="13sp"
+        android:textColor="#9CA3AF"
+        android:letterSpacing="0.03"
+        app:layout_constraintTop_toBottomOf="@id/tvName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
